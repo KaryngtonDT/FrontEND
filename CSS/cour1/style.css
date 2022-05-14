@@ -1,0 +1,162 @@
+/* 1rem=16px pour font-size
+text shadow
+
+*/
+
+@font-face {
+    font-family:"font-1";
+    src: url(./assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ background:url(./assets/img/sunset-gc80278dca_1920.jpg)fixed center/cover;
+ height: 100vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color:white ;
+  text-shadow: 2px -2px 1px darkcyan;
+  text-align: center;
+  font-family: 'font-1', serif;
+}
+
+header{
+    color: white;
+}
+
+#hellotoyou::first-letter {
+  text-transform: uppercase;
+
+}
+
+main{
+    background: whitesmoke;
+    width: 80%;
+    min-height: 200px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -3px 4px 8px 10px blue;
+}
+
+.positioning, .flexbox, .grid{
+    border: 2px solid skyblue;
+    padding: 13.5px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+ 
+}
+.positioning{
+    position: relative;
+}
+
+#circle{
+    background: skyblue;
+    padding: 27.5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.99px;
+    right: 0;
+    
+}
+
+#rectangle{
+background: slateblue;
+position: absolute;
+padding: 10px;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+
+
+ul{
+
+    background: gray;
+    width: 80%;
+    margin: 10px auto;
+
+    /* alligne les elements */
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+li{
+    list-style-type: none;
+    background: black;
+    height: 100px;
+    width: 100px;
+
+    /* centrer verticallement */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+}
+form{
+    border: 1px solid red;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "i1 i2" "ta ta" "bt bt";
+}
+#firstname{
+    grid-area: i1;
+}
+#surname{
+    grid-area: i2;
+}
+textarea{
+    resize: none;
+    grid-area: ta;
+}
+input[type="submit"]{
+    grid-area: bt;
+    height: 30px ;
+    cursor: pointer;
+    background: cyan;
+}
+
+input[type="submit"]:hover{
+    background: darkblue;
+    color: white;
+}
+
+input,textarea{
+height: 45px;
+margin: 5px;
+padding: 1px;
+border:1px solid darkblue;
+border-radius: 5px;
+}
+
+@media screen and (max-width:753px) {
+    .grid-container{
+        display: block;
+    }
+}
+@media screen and (max-width:556px) {
+    form{
+        display: block;
+    }
+}

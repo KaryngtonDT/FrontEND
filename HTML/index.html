@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="shortcut icon" href="logo-html.png" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h3>Tableaux</h3>
+        <div>
+          <table border="1">
+            <caption>
+              Population d'europe
+            </caption>
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Population</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>66M</td>
+              </tr>
+              <tr>
+                <td>Allemagne</td>
+                <td>82M</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+          <h3>liens important </h3>
+        <div>
+          <a
+            href="https://htmlcheatsheet.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >htmlcheatsheet</a
+          >
+        </div>
+        <div>
+          <a
+            href="https://www.toptal.com/designers/htmlarrows/symbols/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >htmlIconeCode</a
+          >
+        </div>
+        <div>
+          <a
+            href="https://pixabay.com/de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >video and image</a
+          >
+        </div>
+          <a
+            href="https://fontawesome.com/account"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Icones fontawesome ne marcche que en important le son cdn </a
+          > <span><a href="https://cdnjs.com/libraries/font-awesome">librerie cdn</a></span>
+        </div>
+      </section>
+      <section>
+          <h3>videos en Html</h3>
+        <div>
+         <p> video src="" autoplay loop muted video </p> 
+          <!-- loop relance la  videos -->
+        </div>
+      </section>
+      <section>
+        <h3>Formulaire</h3>
+        <form action="/action.php" method="post">
+          <label for="name">Nom</label>
+          <input type="text" placeholder="Entrez votre nom" id="name" />
+          <br>
+          <label for="age">Age</label>
+          <input type="number"  id="age" step="1" value="20" min="5" max="30"/>
+          <br>
+          <label for="gender">Gender</label>
+          <select id="gender">
+              <option value="homme">Homme</option>
+              <option selected value="femme">Femme</option>
+          </select>
+          <div>
+            <label for="human">Nom</label>
+            <input type="radio" id="human" name="type"/>
+            <label for="dog">Nom</label>
+            <input type="radio" id="dog" name="type"/>
+            <label for="Cat">Nom</label>
+            <input type="radio" id="Cat" name="type"/>
+          </div>
+          <div>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Entrez votre demande ici"></textarea>
+          </div>
+          <div>
+              <label><input type="checkbox">Accepter les CGV</label>
+          </div>
+          <input type="submit" value="valider">
+        </form>
+      </section>
+    </main>
+    <footer>
+        <a href="mailto:sa@gmail.com">Ecrivez-moi</a>
+        <br>
+        <a href="notice.txt" download="notice">Download</a>
+    </footer>
+
+  </body>
+</html>
