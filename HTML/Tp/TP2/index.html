@@ -1,57 +1,81 @@
 <!DOCTYPE html>
+
+<!-- penser a changer la langue -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maquette Helium</title>
-    <link rel="stylesheet" href="stylegrid.css">
-  </head>
-  <body>
-    <nav>
-      <h2>Helium</h2>
-      <ul>
-        <li>5G</li>
-        <li>Explorer</li>
-        <li>Ecosystem</li>
-      </ul>
-    </nav>
-    <header>
-      <div class="header-left">
-        <div class="header-left-container">
-          <h1>People-Powered Networks</h1>
-          <h3>Start a wireless Revolution</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
-            assumenda.
-          </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- la balise title supporte juska 70 characteres -->
+  <title>Maquette Helium new genration technologie mega revolutionnaire</title>
+
+  <!-- ajouter une ddescription -->
+  <meta name="description"
+    content="Tout savoir sur Helium le modem ultra rapide nouvelle generation qui va revolutionner l'internet 3.0  et notre approche des technologies">
+
+  <!-- Open Graph protocol : sert a etre plus visible sur les reseaux -->
+  <meta property="og:title" content="Helium" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+  <meta name="og:description"
+    content="Tout savoir sur Helium le modem ultra rapide nouvelle generation qui va revolutionner l'internet 3.0  et notre approche des technologies">
+  <meta property="og:image" content="image-helium.png" />
+
+
+  <link rel="stylesheet" href="stylegrid.css">
+</head>
+
+<body>
+  <nav>
+    <h2>Helium</h2>
+    <ul>
+      <li>5G</li>
+      <li>Explorer</li>
+      <li>Ecosystem</li>
+    </ul>
+  </nav>
+  <header>
+    <div class="header-left">
+      <div class="header-left-container">
+        <!-- le h1 doit etre le plus haut possible et dire de quoi on parle -->
+        <h1>People-Powered Networks</h1>
+        <h3>Start a wireless Revolution</h3>
+        <!-- le paragraphe aide le rebot a comprendre le contenu strong em -->
+        <p>
+          Lorem <em>ipsum </em>  dolor, <strong>amet consectetur adipisicing elit </strong> . Qui,
+          assumenda.
+        </p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="header-right-container">
+        <!-- il fo obligatoirement completer alt de la balise img format webP -->
+        <img src="./assets/img/main.png" alt="modem-pic" id="modem" />
+      </div>
+    </div>
+  </header>
+  <section class="infos">
+    <div class="infos-left">
+      <h3>Core Technologies</h3>
+      <div class="btn-container">
+        <button>Tokens</button>
+        <button>Proof of coverage</button>
+        <button>LongFi</button>
+      </div>
+    </div>
+    <div class="infos-right">
+      <h3>Our Investors</h3>
+      <div class="investor">
+        <div class="img-container">
+          <img src="./assets/img/investlogo2blue.png" alt="investor1" />
+          <img src="./assets/img/investlogo3blue.png" alt="investor2" />
+          <img src="./assets/img/investlogo4blue.png" alt="investor3" />
         </div>
       </div>
-      <div class="header-right">
-        <div class="header-right-container">
-          <img src="./assets/img/main.png" alt="modem-pic" id="modem" />
-        </div>
-      </div>
-    </header>
-    <section class="infos">
-      <div class="infos-left">
-        <h3>Core Technologies</h3>
-        <div class="btn-container">
-          <button>Tokens</button>
-          <button>Proof of coverage</button>
-          <button>LongFi</button>
-        </div>
-      </div>
-      <div class="infos-right">
-        <h3>Our Investors</h3>
-        <div class="investor">
-          <div class="img-container">
-            <img src="./assets/img/investlogo2blue.png" alt="investor1" />
-            <img src="./assets/img/investlogo3blue.png" alt="investor2" />
-            <img src="./assets/img/investlogo4blue.png" alt="investor3" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>

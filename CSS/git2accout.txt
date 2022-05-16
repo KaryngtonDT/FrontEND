@@ -1,0 +1,14 @@
+git init
+
+git add .
+
+git commit -m "test"
+
+ git remote add origin git@kdt:KaryngtonDT/ProjektName.git
+  git remote set-url origin git@sakdt:sakdtDeveloper/FrontEND.git  
+
+
+  git branch -M main
+  git push origin main
+
+

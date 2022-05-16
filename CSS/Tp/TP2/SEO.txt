@@ -1,0 +1,32 @@
+search engine Optimization
+
+1-creer du bon contenu
+ -400 mots par page min
+ -garder un contenu a jour
+ -ne pas repeter  tj les mm choses
+ -ne ps fair une page d'itro avant le site
+ -pas de lien "cliquer ici" "en savoir plus"
+ -penser a etre local(preciser ville, quartier, region), ler robot privilegie les choses locales. mettre .fr si votr   
+  site es destine a un public fr
+
+
+2-HTML"seo friendly"
+
+-voir Helium
+-Tester open gragh
+
+3- site rapide(performent)
+ 
+ -le robot teste le temps de chargement
+ -il faut que le JS soit lu en dernier
+ -il faut faire apparaitre le plus vite possible une couleur de fond
+ -privilegier les images depuis le css
+
+5- Tester son SEO avec lighthouse pludin
+
+4-robots-txt.com
+ -on peu communiquer avec le robot de google sur cette page. 
+ on peut surtout lui indiquer de ne pas reference certains pages de notre site.
+
+ User-agent: *
+ Disallow: /page-a.html
